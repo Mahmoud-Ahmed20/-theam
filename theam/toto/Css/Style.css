@@ -1,0 +1,1857 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+.position{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.position-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* navbar1 */
+.navbar-1{
+    width: 100%;
+    height: 45px;
+    background: #2e3d44;
+    /* background: chocolate; */
+    z-index: 100;
+    /* position: fixed; */
+    position: relative;
+}
+.navbar-1 .title-1{
+    width: 100%;
+    height: 100%;
+    /* background: cornflowerblue; */
+}
+.navbar-1 .title-1 .about-title-1{
+    width: 30%;
+    height: 100%;
+    /* background: crimson; */
+}
+.navbar-1 .title-1 .about-title-2{
+    width: 50%;
+    height: 100%;
+    /* background: crimson; */
+}
+.navbar-1 .title-1 .about-title-1>.icon{
+    height: 100%;
+    width: 50px;
+    background: #08d665;
+    z-index: 1;
+    color: white;
+}
+.navbar-1 .title-1 .about-title-1>.worde{
+    height: 100%;
+    margin-top: 20px;
+    /* color: white; */
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-right: 40px;
+}
+.navbar-1 .title-1 .about-title-1>.icon-1>i,
+.navbar-1 .title-1 .about-title-1>.icon-1>div>i{
+    margin: 0 10px;
+    transition: color .5s;
+    cursor: pointer;
+    color: white;
+}
+.navbar-1 .title-1 .about-title-1>.icon-1>div{
+    border-right: 2px solid #435157;
+}
+.navbar-1 .title-1 .about-title-1>.icon-1>i:hover,
+.navbar-1 .title-1 .about-title-2>.icon>a>i:hover,
+.navbar-1 .title-1 .about-title-1>.icon-1>div>i:hover{
+    color: #08d665;
+}
+.navbar-1 .title-1 .about-title-2 .icon{
+    width: 30%;
+    height: 100%;
+}
+.navbar-1 .title-1 .about-title-2 .icon>a{
+    height: 100%;
+    border-left: 1px solid #435157;
+    text-decoration: none;
+}
+.navbar-1 .title-1 .about-title-2 .icon>a>i{
+    color: white;
+    transition: color .5s;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.navbar-1 .title-1 .about-title-2 .contact{
+    width: 30%;
+    height: 100%;
+    margin-left: -100px;
+}
+.navbar-1 .title-1 .about-title-2 .contact>a{
+    width: 100%;
+    height: 100%;
+    background: #08d665;
+}
+.navbar-1 .title-1 .about-title-2 .contact>a{
+    text-decoration: none;
+    position: relative;
+    color: white;
+}
+.navbar-1 .title-1 .about-title-2 .contact>a>i{
+    position: absolute;
+    left: 15px;
+    transition: left .5s;
+}
+.navbar-1 .title-1 .about-title-2 .contact>a:hover i{
+    left: 20px;
+}
+/* navbar1-end */
+/* navbar2 */
+.navbar-2{
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    border-bottom: 1px solid #435157;
+    position: fixed;
+    /* position: relative; */
+    z-index: 100;
+}
+.navbar-2 .photo{
+    width: 20%;
+    height: 100%;
+    /* background: wheat; */
+}
+.navbar-2 .title{
+    width: 60%;
+    height: 100%;
+    /* background: violet; */
+}
+.navbar-2 .icon{
+    width: auto;
+    height: 100%;
+    /* background: white; */
+    cursor: pointer;
+}
+.navbar-2 .title>.menu-1,
+.navbar-2 .title>.menu-2,
+.navbar-2 .title>.menu-3,
+.navbar-2 .title>.menu-4,
+.navbar-2 .title>.menu-5{
+    height: 100%;
+    width: 15%;
+    /* background: yellow; */
+    /* text-transform:uppercase; */
+    color: #08d665;
+    position: relative;
+}
+ .navbar-2 .title .menu-1>.menu-home{
+     position: absolute;
+     top:0;
+     left: 0;
+     width: 200px;
+     height: 100%;
+     /* background: #2e3d44; */
+     list-style: none;
+     padding: 10px 0 10px 0;
+     transition: height .5s;
+     opacity: 0;
+     visibility: hidden;
+     transition:opacity .2s,visibility .5s,top .5s;
+}
+.navbar-2 .title .menu-5>.menu-home{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 200px;
+     height: 100%;
+     /* background: #2e3d44; */
+     list-style: none;
+     padding: 10px 0 10px 0;
+     transition:opacity .2s,visibility .5s,top .5s;
+     opacity: 0;
+     visibility: hidden;
+}
+.navbar-2 .title .menu-1:hover .menu-home,
+.navbar-2 .title .menu-5:hover .menu-home{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+.navbar-2 .title .menu-1>.menu-home .sourc,
+.navbar-2 .title .menu-5>.menu-home .sourc{
+    width: 100%;
+    height: 50%;
+    background: #2e3d44;
+}
+.navbar-2 .title .menu-1>.menu-home .sourc .icon,
+.navbar-2 .title .menu-5>.menu-home .sourc .icon{
+    background: transparent;
+    width: 10%;
+    height: 30px;
+    position: absolute;
+    z-index: 1;
+    left: 5px;
+    transition: left .5s,opacity .5s;
+    opacity: 0;
+}
+.navbar-2 .title .menu-1>.menu-home .sourc:hover .icon,
+.navbar-2 .title .menu-5>.menu-home .sourc:hover .icon{
+    left: 15px;
+    opacity: 1;
+}
+.navbar-2 .title .menu-1>.menu-home .sourc .title,
+.navbar-2 .title .menu-5>.menu-home .sourc .title{
+    width: 70%;
+    height: 30px;
+    /* margin-left: -25px; */
+    position: absolute;
+    left: 30px;
+    z-index: 1;
+    transition: left .5s;
+    background: transparent;
+}
+.navbar-2 .title .menu-1>.menu-home .sourc:hover .title,
+.navbar-2 .title .menu-5>.menu-home .sourc:hover .title{
+    left: 40px;
+}
+.navbar-2 .title .menu-1>.menu-home .sourc .title>li>a,
+.navbar-2 .title .menu-5>.menu-home .sourc .title>li>a{
+    text-decoration: none;
+    color: #c8c6c6;
+    font-size: .8rem;
+    text-transform: uppercase;
+    transition: color .5s;
+}
+.navbar-2 .title .menu-1>.menu-home .sourc:hover li>a,
+.navbar-2 .title .menu-5>.menu-home .sourc:hover li>a{
+    color: #08d665;
+}
+.navbar-2 .title .menu-1>.menu-home .sourc .icon>li>a>i,
+.navbar-2 .title .menu-5>.menu-home .sourc .icon>li>a>i{
+    transition: color .5s;
+    /* background: transparent; */
+}
+.navbar-2 .title .menu-1>.menu-home .sourc:hover li>a>i,
+.navbar-2 .title .menu-5>.menu-home .sourc:hover li>a>i{
+    color: #08d665;
+}
+.navbar-2 .title>.menu-1:after,
+.navbar-2 .title>.menu-2:after,
+.navbar-2 .title>.menu-3:after,
+.navbar-2 .title>.menu-4:after,
+.navbar-2 .title>.menu-5:after{
+    content: "";
+    position: absolute;
+    top: 77px;
+    width: 0;
+    height: 3px;
+    display: block;
+    color: #08d665;
+    background: #08d665;
+    opacity: 0;
+    transition:  width .5s,opacity .5s;
+}
+.navbar-2 .title>.menu-1:hover:after,
+.navbar-2 .title>.menu-2:hover:after,
+.navbar-2 .title>.menu-3:hover:after,
+.navbar-2 .title>.menu-4:hover:after,
+.navbar-2 .title>.menu-5:hover:after{
+    width: 100%;
+    opacity: 1;
+}
+.navbar-2 .title>.menu-1>a,
+.navbar-2 .title>.menu-2>a,
+.navbar-2 .title>.menu-3>a,
+.navbar-2 .title>.menu-4>a,
+.navbar-2 .title>.menu-5>a{
+    /* height: 100%; */
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    font-size: .9rem;
+    text-transform: uppercase;
+    color: #c8c6c6;
+}
+.navbar-2 .title .search{
+    width: 40%;
+    height: 100%;
+}
+.navbar-2 .title>i{
+   color:#08d665;
+   margin-right: -10px;
+}
+.navbar-2 .icon>img{
+    position: relative;
+    cursor: pointer;
+}
+.navbar-2 .icon .icon-2{
+    cursor: pointer;
+    position: absolute;
+    right: -100px;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+}
+.navbar-2 .icon .icon-2 .slide{
+    padding-left: 25px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    line-height: 2.5;
+}
+.navbar-2 .icon .icon-2 .slide>p{
+    text-align: left;
+    font-size: 130%;
+    color: #fff;
+}
+.navbar-2 .icon .icon-2 .slide>a,
+.navbar-2 .icon .icon-2 .slide>i{
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    text-align: center;
+    border: 1px solid;
+    display:  inline-block;
+    line-height: 40px;
+    margin-right: 6px;
+    border-radius: 4px;
+    transition: all .3s;
+}
+.navbar-2 .icon .icon-2 .slide>i{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.navbar-2 .icon .icon-2 .slide>a:hover,
+.navbar-2 .icon .icon-2 .slide>i:hover{
+    background: #08d665;
+}
+/* navbar2-end */
+/* Home */
+.Home{
+    position: relative;
+    width: 100%;
+    height: 590px;
+    background-image:url(../img/download-6.jpg) ;
+    background-size: cover;
+}
+.Home .container{
+    height: 600px;
+    /* background: springgreen; */
+}
+.Home .container .title{
+    width: 60%;
+    height: 70%;
+    text-transform: uppercase;
+}
+.Home .container .title h2{
+    font-size: 2.2rem;
+    margin-top: 50px;
+    color: #fff;
+    line-height: 1.6;
+}
+.Home .container .title h2>span{
+    color: #08d665;
+}
+.Home .container .title .title-1{
+    width: 100%;
+    height: 50px;
+    /* background: darkkhaki; */
+    border-left: 3px solid #08d665;
+}
+.Home .container .title p{
+    color: #c8c6c6;
+    font-size: 1rem;
+    margin-top: 30px;
+    margin-left: 10px;
+    line-height: 1.6;
+}
+.Home .container .title a{
+    background: #08d665;
+    z-index: 2;
+    border: 1px solid transparent;
+    color: #fff;
+    margin-top: 60px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 13px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.Home .container .title a>i{
+    padding: 13px 25px;
+    background: #fff;
+    border-radius: 4px;
+    margin-left: 5px;
+    color: #08d665;
+}
+.Home .container .title a{
+    transition: background .5s,color .5s,border .5s;
+}
+.Home .container .title a:hover{
+    background: transparent;
+    color: #08d665;
+    border: 1px solid #08d665;
+}
+.Home .container .photo,
+.Home .container .photo-1{
+    width: 45%;
+    height: 100%;
+    position: relative;
+    /* overflow: hidden; */
+}
+.Home .container .photo-1 div{
+    background-image: url(../img/[quomodosoft.com][585]author2.png)!important;
+}
+.Home .container .photo div,
+.Home .container .photo-1 div{
+    background-image: url(../img/[quomodosoft.com][705]author1.png);
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    left: 15%;
+    top: -5%;
+}
+.Home .move{
+    position: absolute;
+    right: 0;
+    top: 20%;
+    width: 100px;
+    height: auto;
+    /* background: salmon; */
+    z-index: 10;
+    padding: 20px;
+}
+/* .Home .move>.move-1{
+ background: #08d665 !important;  
+} */
+.Home .move>.move-1,.Home .move>.move-2{
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    /* background: transparent; */
+    border: 1px solid #08d665;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #fff;
+}
+/* Home-end */
+/* About */
+.About{
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/download-3.png);
+    background-size: cover;
+    position: relative;
+    position: relative;
+}
+.About .photo-1{
+    overflow: hidden;
+    height: 400px;
+    width: 560px;
+    position: absolute;
+    left: 130px;
+    top: 100px;
+    background-image: url(../img/download-7.png);
+    background-repeat: no-repeat;
+    /* transform: scale(); */
+    background-size: cover;
+    z-index: 1;
+}
+.About .photo-2{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 100px;
+    top: 390px;
+    background-image: url(../img/download-1.svg);
+    background-size: cover;
+}
+.About .container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    height: 600px;
+    /* background: tomato; */
+    z-index: 10;
+}
+.About .container .photo{
+    background-image: url(../img/download-1.png);
+    height: 500px;
+    width: 50%;
+    overflow: hidden;
+    transform: scale(.9,1.1);
+    position: relative;
+}
+.About .container .photo a>span{
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+    border-radius: 50%;
+    padding: 30px 40px;
+    background: #08d665;
+    position: relative;
+    z-index: 1;
+}
+.About .container .photo a>span>i{
+    position: absolute;
+    left: 54%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.spinner {
+    position: absolute;
+    left: 34%;
+    top: 37.5%;
+    transform: translate(-46%,-50%);
+    width: 150px;
+    height: 150px;
+    background-color: #08d665;
+    border-radius: 100%;  
+    -webkit-animation: hover 2s infinite ease-in-out;
+    animation: hover 2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes hover {
+    0% { -webkit-transform: scale(0) }
+    100% {
+      -webkit-transform: scale(.8);
+      opacity: 0;
+
+    }
+  }
+  
+  @keyframes hover {
+    0% { 
+      -webkit-transform: scale(0);
+      transform: scale(0);
+    } 100% {
+      -webkit-transform: scale(1.0);
+      transform: scale(.8);
+      opacity: 0;
+    }
+  }
+.About .container .title{
+    margin-left: 50px;
+    width: 50%;
+    height: 60%;
+    /* background: tomato; */
+    text-align: left;
+    display: block;
+    text-transform: capitalize !important;
+}
+.About .container .title>h2{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.About .container .title>h2>span{
+    color: #08d665;
+}
+.About .container .title>p{
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+
+
+.About .container .title>a{
+    background: #08d665;
+    z-index: 2;
+    border: 1px solid transparent;
+    color: #fff;
+    margin-top: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 13px 11px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.About .container .title>a>i{
+    padding: 5px 8px;
+    background: #fff;
+    border-radius: 4px;
+    margin-left: 5px;
+    color: #08d665;
+}
+.About .container .title>a{
+    transition: background .5s,color .5s,border .5s;
+}
+
+.About .container .title a:hover{
+    background: transparent;
+    color: #08d665;
+    border: 1px solid #08d665;
+}
+.About #vshow{
+    position: absolute;
+    top: 55%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    z-index: 120;
+    border-radius: 30px;
+    border:1px solid #08d665;
+}
+.About #vshow-1{
+    position: absolute;
+    top: 15%;
+    left: 80%;
+    transform: translate(-50px,-50px);
+    padding: 40px 30px;
+    background: transparent;
+    color: #08d665;
+    z-index: 120;
+    cursor: pointer;
+}
+.About #vshow-2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.719);
+    z-index: 100;
+}
+/* About-end */
+/* Service */
+.Service{
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/download-3.png);
+    background-size: cover;
+}
+.Service .container{
+    height: 500px;
+    /* background: tomato; */
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+.Service .container .title,
+.Protfolio .container .title,
+.Protfolio-1 .container .title,
+.Protfolio-2 .container .title,
+.Protfolio-3 .container .title,
+.Protfolio-4 .top>.container .title{
+    width: 100%;
+    height: auto;
+    /* padding-top: 50px; */
+}
+.Service .container .title>.title-1,
+.Protfolio .container .title>.title-1,
+.Protfolio-1 .container .title>.title-1,
+.Protfolio-2 .container .title>.title-1,
+.Protfolio-3 .container .title>.title-1,
+.Protfolio-4 .top>.container .title>.title-1{
+    margin-right: 40px !important;
+    text-transform: uppercase;
+}
+.Service .container .title>.title-1,
+.Service .container .title>.title-2,
+.Protfolio .container .title>.title-1,
+.Protfolio .container .title>.title-2,
+.Protfolio-1 .container .title>.title-1,
+.Protfolio-1 .container .title>.title-2,
+.Protfolio-2 .container .title>.title-1,
+.Protfolio-2 .container .title>.title-2,
+.Protfolio-3 .container .title>.title-1,
+.Protfolio-3 .container .title>.title-2,
+.Protfolio-4 .top>.container .title>.title-1,
+.Protfolio-4 .top>.container .title>.title-2{
+    width: 43%;
+    height: 100%;
+}
+.Service .container .title>.title-1 span,
+.Service .container .title>.title-1 h2>span,
+.Protfolio .container .title>.title-1 span,
+.Protfolio .container .title>.title-1 h2>span,
+.Protfolio-1 .container .title>.title-1 span,
+.Protfolio-1 .container .title>.title-1 h2>span,
+.Protfolio-2 .container .title>.title-1 span,
+.Protfolio-2 .container .title>.title-1 h2 span,
+.Protfolio-3 .container .title>.title-1 span,
+.Protfolio-3 .container .title>.title-1 h2>span,
+.Protfolio-4 .top>.container .title>.title-1 span,
+.Protfolio-4 .top>.container .title>.title-1 h2>span{
+    color: #08d665;
+}
+.Service .container .title>.title-1 h2,
+.Service .container .title>.title-2>p,
+.Protfolio .container .title>.title-1 h2,
+.Protfolio .container .title>.title-2>p,
+.Protfolio-1 .container .title>.title-1 h2,
+.Protfolio-1 .container .title>.title-2 p,
+.Protfolio-2 .container .title>.title-1 h2,
+.Protfolio-2 .container .title>.title-2 p,
+.Protfolio-3 .container .title-1 h2,
+.Protfolio-3 .container .title-2>p,
+.Protfolio-4 .top>.container .title>.title-1 h2,
+.Protfolio-4 .top>.container .title>.title-2>p{
+    color: #fff;
+}
+.Service .container .title>.title-2,
+.Protfolio .container .title>.title-2,
+.Protfolio-1 .container .title>.title-2,
+.Protfolio-2 .container .title>.title-2,
+.Protfolio-3 .container .title>.title-2,
+.Protfolio-4 .top>.container .title>.title-2{
+    border-left:5px solid #08d665;
+}
+.Service .container .title>.title-2>p,
+.Protfolio .container .title>.title-2>p,
+.Protfolio-1 .container .title>.title-2>p,
+.Protfolio-2 .container .title>.title-2>p,
+.Protfolio-3 .container .title>.title-2>p,
+.Protfolio-4 .top>.container .title>.title-2>p{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.Service .container .slides{
+    width: 100%;
+    height: 500px;
+    /* background: seagreen; */
+}
+.Service .container .slides>.slide-1,
+.Service .container .slides>.slide-2,
+.Service .container .slides>.slide-3,
+.Service .container .slides>.slide-4{
+    width: 24%;
+    height: 230px;
+    /* background: sienna; */
+    position: relative;
+    overflow: hidden;
+    transition: box 1s;
+    box-shadow:0 65px 64.5px rgba(0,0,0,.39);
+}
+.Service .container .slides>.slide-1:hover,
+.Service .container .slides>.slide-2:hover,
+.Service .container .slides>.slide-3:hover,
+.Service .container .slides>.slide-4:hover{
+    box-shadow: 0 55px 55.5px rgba(0,0,0,.39);
+}
+.Service .container .slides>.slide-1 .title,
+.Service .container .slides>.slide-2 .title,
+.Service .container .slides>.slide-3 .title,
+.Service .container .slides>.slide-4 .title{
+    background: #0b0d0e;
+    padding: 15px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 90%;
+    /* background: silver; */
+    font-size: 16px;
+    line-height: 27px;
+    color: #fff;
+    font-family: rubik,sans-serif;
+    font-weight: 500;
+    text-align: left;
+    transition: top .5s,background .5s,box .5s;
+}
+.Service .container .slides>.slide-1 .title:hover,
+.Service .container .slides>.slide-2 .title:hover,
+.Service .container .slides>.slide-3 .title:hover,
+.Service .container .slides>.slide-4 .title:hover{
+    box-shadow: 0 65px 64.5px rgba(0,0,0,.39);
+    top: 50%;
+    background: rgba(0,0,0,.39);
+}
+.Service .container .slides>.slide-1 .title>span,
+.Service .container .slides>.slide-1 .title>h5,
+.Service .container .slides>.slide-1 .title>p,
+.Service .container .slides>.slide-2 .title>span,
+.Service .container .slides>.slide-2 .title>h5,
+.Service .container .slides>.slide-2 .title>p,
+.Service .container .slides>.slide-3 .title>span,
+.Service .container .slides>.slide-3 .title>h5,
+.Service .container .slides>.slide-3 .title>p,
+.Service .container .slides>.slide-4 .title>span,
+.Service .container .slides>.slide-4 .title>h5,
+.Service .container .slides>.slide-4 .title>p{
+    text-transform: uppercase;
+}
+.Service .container .slides>.slide-1 .title>h5,
+.Service .container .slides>.slide-2 .title>h5,
+.Service .container .slides>.slide-3 .title>h5,
+.Service .container .slides>.slide-4 .title>h5{
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #08d665;
+}
+.Service .container .slides>.slide-1 .title>p,
+.Service .container .slides>.slide-2 .title>p,
+.Service .container .slides>.slide-3 .title>p,
+.Service .container .slides>.slide-4 .title>p{
+    font-size: .9rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+.Service .container .Rate{
+    width: 100%;
+    height: 250px;
+    /* background: rosybrown; */
+}
+.Service .container .Rate>.rate{
+    width: 24%;
+    height: 100%;
+    /* background: royalblue; */
+    position: relative;
+    text-align: center;
+}
+.Service .container .rate #Crl{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Service .container .rate>h2{
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 4rem;
+}
+.Service .container .rate>h2>span{
+    font-size: 1.4rem;
+}
+.Service .container .rate>h3{
+    width: 100%;
+    margin: 0;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-transform: uppercase;
+}
+/* Service-end */
+/* Protfolio */
+.Protfolio{
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/download-3.png);
+    background-size: cover;
+}
+.Protfolio .container{
+    height: 600px;
+    /* background: darkmagenta; */
+}
+.Protfolio .container .slide{
+    margin-top: 70px;
+    width: 100%;
+    height: 400px;
+}
+.Protfolio .container .slide>.title{
+    overflow: hidden;
+    height: 100%;
+    width: 31%;
+    background: #131617;
+    position: relative;
+    transition: background 1s;
+}
+.Protfolio .container .slide>.title>.about-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    width: 90%;
+    height: 80%;
+    /* background: cornsilk; */
+    text-align: center;
+}
+.Protfolio .container .slide>.title>.about-title h2{
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #08d665;
+    margin: 30px 0;
+    transition: color .5s;
+}
+.Protfolio .container .slide>.title>.about-title p{
+    text-transform:capitalize;
+    color: #999;
+    font-size: 1.3rem;
+    font-weight: 400;
+    transition: color .5s;
+}
+.Protfolio .container .slide>.title:hover .about-title h2,
+.Protfolio .container .slide>.title:hover .about-title p{
+    color: #fff;
+}
+.Protfolio .container .slide>.title:hover{
+    background:#08d665;
+}
+.Protfolio .container .slide>.title:hover{
+    visibility: visible;
+}
+.Protfolio .container .slide>.title>.hover{
+    position: absolute;
+    bottom: -50%;
+    right: -50%;
+    transform: translate(-20%,-20%);
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border-radius: 50%;
+    position: relative;
+    visibility: hidden;
+}
+.Protfolio .container .slide>.title>.hover>.part-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #22cd6f;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s,opacity .5s,width .5s,height .5s;
+}
+.Protfolio .container .slide>.title:hover .part-1,
+:hover .part-1{
+    width: 500px;
+    height: 500px;
+    visibility: visible;
+    opacity: 1;
+}
+.Protfolio .container .slide>.title>.hover>.part-1>.part-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #39d27e;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s,opacity .5s,width .5s,height .5s;
+}
+.Protfolio .container .slide>.title:hover .hover>.part-1>.part-2{
+    visibility: visible;
+    opacity: 1;
+    width: 400px;
+    height: 400px;
+}
+.Protfolio .container .slide>.title>.hover>.part-1>.part-3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #4dd78b;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s,opacity .5s,width .5s,height .5s;
+}
+.Protfolio .container .slide>.title:hover .hover>.part-1>.part-3{
+    visibility: visible;
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+}
+.Protfolio .container .slide>.title>.hover>.part-1>.part-4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #5fdb97;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s,opacity .5s,width .5s,height .5;
+}
+.Protfolio .container .slide>.title:hover .hover>.part-1>.part-4{
+    visibility: visible;
+    opacity: 1;
+    width: 200px;
+    height: 200px;
+}
+.Protfolio .container .slide>.title>.hover,
+.Protfolio .container .slide>.title>.hover>.part-1,
+.Protfolio .container .slide>.title>.hover>.part-1>.part-2,
+.Protfolio .container .slide>.title>.hover>.part-1>.part-3,
+.Protfolio .container .slide>.title>.hover>.part-1>.part-4{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.Protfolio .container .slide>.title-dif{
+    overflow: hidden;
+    height: 100%;
+    width: 31%;
+    position: relative;
+    transition: background 1s;
+    background:#08d665;
+}
+.Protfolio .container .slide>.title-dif>.about-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    width: 90%;
+    height: 80%;
+    /* background: cornsilk; */
+    text-align: center;
+}
+.Protfolio .container .slide>.title-dif>.about-title h2{
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 30px 0;
+    transition: color .5s;
+}
+.Protfolio .container .slide>.title-dif>.about-title p{
+    text-transform:capitalize;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    transition: color .5s;
+}
+/* .Protfolio .container .slide>.title-dif:hover{
+    visibility: visible;
+} */
+.Protfolio .container .slide>.title-dif>.hover{
+    position: absolute;
+    bottom: -50%;
+    right: -50%;
+    transform: translate(-20%,-20%);
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border-radius: 50%;
+    position: relative;
+    /* z-index: 10; */
+}
+.Protfolio .container .slide>.title-dif>.hover>.part-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500;
+    height: 500;
+    border-radius: 50%;
+    background: #22cd6f;
+}
+.Protfolio .container .slide>.title-dif>.hover>.part-1>.part-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400;
+    height: 400;
+    border-radius: 50%;
+    background: #39d27e;
+}
+.Protfolio .container .slide>.title-dif>.hover>.part-1>.part-3{
+    position: absolute;
+    top: 300%;
+    left: 300%;
+    transform: translate(-50%,-50%);
+    width: 200;
+    height: 200;
+    border-radius: 50%;
+    background: #4dd78b;
+}
+.Protfolio .container .slide>.title-dif>.hover>.part-1>.part-4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200;
+    height: 200;
+    border-radius: 50%;
+    background: #5fdb97;
+}
+/* Protfolio-end */
+/* Protfolio-1 */
+.Protfolio-1{
+    width: 100%;
+    height: 700px;
+    background-image:url(../img/download-5.png);
+    background-size: cover;
+    position: relative;
+}
+.Protfolio-1 .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 600px;
+    /* background: turquoise; */
+}
+.Protfolio-1 .container .title>.icon ,
+.Protfolio-2 .container .title>.icon,
+.Protfolio-4 .top>.container .title>.icon{
+    width: 25%;
+    height: 100px;
+    /* background: violet; */
+    text-align: right;
+    padding: 40px 40px 0 0;
+    /* margin-left: 50px; */
+}
+.Protfolio-1 .container .title>.icon i,
+.Protfolio-2 .container .title>.icon i,
+.Protfolio-4 .top>.container .title>.icon i{
+    height: 45px;
+    width: 45px;
+    background: 0 0;
+    border: 1px solid #06a950;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 4px;
+    color: #06a950;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0 5px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.Protfolio-1 .container .title>.icon i:hover,
+.Protfolio-2 .container .title>.icon i:hover,
+.Protfolio-4 .top>.container .title>.icon i:hover{
+    background: #06a950;
+    color: #fff;
+}
+.Protfolio-1 .container>.slide{
+    width: 100%;
+    margin-top: 50px;
+    height: 430px;
+    /* background: sandybrown; */
+    overflow: hidden;
+    position: relative;
+}
+.Protfolio-1 .container>.slide>.title-1{
+    width: 30%;
+    height: 100%;
+    /* background: slateblue; */
+    position: absolute;
+    left: 1.5%;
+    top: 1.5%;
+    /* visibility: visible !important; */
+}
+.Protfolio-1 .container>.slide>.title-1>.hover,
+.Protfolio-1 .container>.slide>.title-2>.hover,
+.Protfolio-1 .container>.slide>.title-3>.hover,
+.Protfolio-1 .container>.slide>.title-4>.hover{
+    width: 100%;
+    height: 100%;
+    background: #06a950;
+    z-index: 10;
+    position: absolute;
+    /* padding: 0; */
+    visibility: hidden;
+    transition:visibility .5s linear;
+    /* opacity: 0; */
+}
+.Protfolio-1 .container>.slide>.title-1>.hover span,
+.Protfolio-1 .container>.slide>.title-2>.hover span,
+.Protfolio-1 .container>.slide>.title-3>.hover span,
+.Protfolio-1 .container>.slide>.title-4>.hover span{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+}
+.Protfolio-1 .container>.slide>.title-1:hover .hover,
+.Protfolio-1 .container>.slide>.title-2:hover .hover,
+.Protfolio-1 .container>.slide>.title-3:hover .hover,
+.Protfolio-1 .container>.slide>.title-4:hover .hover{
+    visibility: visible;
+}
+.Protfolio-1 .container>.slide>.title-2{
+    width: 30%;
+    height: 100%;
+    /* background: slateblue; */
+    position: absolute;
+    left: 35%;
+    top: 1.5%;
+}
+.Protfolio-1 .container>.slide>.title-3{
+    width: 30%;
+    height: 100%;
+    /* background: slateblue; */
+    position: absolute;
+    left: 68.5%;
+    top: 1.5%;
+}
+.Protfolio-1 .container>.slide>.title-4{
+    width: 30%;
+    height: 100%;
+    /* background: slateblue; */
+    position: absolute;
+    left: 90%;
+    top: 1.5%;
+}
+.Protfolio-1 .container>.slide>.title-1>img,
+.Protfolio-1 .container>.slide>.title-2>img,
+.Protfolio-1 .container>.slide>.title-3>img,
+.Protfolio-1 .container>.slide>.title-4>img{
+    height: 100%;
+    width: 100%;
+}
+/* Protfolio-1-end */
+/* Protfolio-2 */
+.Protfolio-2{
+    width: 100%;
+    height: 700px;
+    background-image: url(../img/download-6.jpg);
+    background-size: cover;
+    position: relative;
+}
+.Protfolio-2 .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 600px;
+    /* background: turquoise; */
+}
+.Protfolio-2 .container .contact{
+    width: 100%;
+    height: 300px;
+    /* background: tomato; */
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.Protfolio-2 .container .contact>.about-contact{
+    width: 80%;
+    height: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background: violet; */
+    /* overflow: hidden; */
+}
+.Protfolio-2 .container .contact>.about-contact img{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.Protfolio-2 .container .contact>.about-contact h4{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    /* font-style: oblique; */
+    font-size: 1.3rem;
+    width: 65%;
+}
+.Protfolio-2 .container .contact>.about-contact .photo{
+    border-radius: 50%;
+    border:none;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+.Protfolio-2 .container .contact>.about-contact p{
+    position: absolute;
+    top: 89%;
+    left: 20%;
+    text-transform: uppercase;
+    color: #fff;
+    /* font-weight: 400; */
+    /* font-style: oblique; */
+    font-size: 1.1rem;
+    /* width: 65%; */
+}
+/* Protfolio-2-end */
+/* Protfolio-3 */
+.Protfolio-3{
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/download-6.jpg);
+    background-size: cover;
+    margin: 0;
+    position: relative;
+}
+.Protfolio-3 .container{
+    height: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background: violet; */
+}
+.Protfolio-3 .container .slide{
+    margin-top: 70px;
+    width: 100%;
+    height: 500px;
+}
+.Protfolio-3 .container .slide>.title{
+    overflow: hidden;
+    height: 100%;
+    width: 31%;
+    background: #131617;
+    position: relative;
+    transition: background 1s;
+}
+.Protfolio-3 .container .slide>.title>.about-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    width: 90%;
+    height: 80%;
+    /* background: cornsilk; */
+    text-align: center;
+}
+.Protfolio-3 .container .slide>.title>.about-title h2{
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 1.8rem;
+    color: #08d665;
+    margin: 30px 0;
+    transition: color .5s;
+}
+.Protfolio-3 .container .slide>.title>.about-title span{
+    text-transform:capitalize;
+    color: #999;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color .5s;
+}
+.Protfolio-3 .container .slide>.title:hover .about-title h2,
+.Protfolio-3 .container .slide>.title:hover .about-title span{
+    color: #fff;
+}
+.Protfolio-3 .container .slide>.title>.about-title .line{
+    width: 80%;
+    height: .5px;
+    background: #c8c6c6;
+    margin: 30px;
+}
+.Protfolio-3 .container .slide>.title:hover{
+    background:#08d665;
+}
+.Protfolio-3 .container .slide>.title:hover{
+    visibility: visible;
+}
+.Protfolio-3 .container .slide>.title>.hover{
+    position: absolute;
+    bottom: -60%;
+    right: -10%;
+    transform: translate(-20%,-20%);
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border-radius: 50%;
+    position: relative;
+    visibility: hidden;
+}
+.Protfolio-3 .container .slide>.title>.hover>.part-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* bottom: 0; */
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #22cd6f;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s,opacity .5s,width .5s,height .5s;
+}
+.Protfolio-3 .container .slide>.title:hover .part-1,
+:hover .part-1{
+    width: 500px;
+    height: 500px;
+    visibility: visible;
+    opacity: 1;
+}
+.Protfolio-3 .container .slide>.title>.hover>.part-1>.part-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #39d27e;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s,opacity .5s,width .5s,height .5s;
+}
+.Protfolio-3 .container .slide>.title:hover .hover>.part-1>.part-2{
+    visibility: visible;
+    opacity: 1;
+    width: 400px;
+    height: 400px;
+}
+.Protfolio-3 .container .slide>.title>.hover>.part-1>.part-3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #4dd78b;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s,opacity .5s,width .5s,height .5s;
+}
+.Protfolio-3 .container .slide>.title:hover .hover>.part-1>.part-3{
+    visibility: visible;
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+}
+.Protfolio-3 .container .slide>.title>.hover>.part-1>.part-4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: #5fdb97;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s,opacity .5s,width .5s,height .5;
+}
+.Protfolio-3 .container .slide>.title:hover .hover>.part-1>.part-4{
+    visibility: visible;
+    opacity: 1;
+    width: 200px;
+    height: 200px;
+}
+.Protfolio-3 .container .slide>.title>.hover,
+.Protfolio-3 .container .slide>.title>.hover>.part-1,
+.Protfolio-3 .container .slide>.title>.hover>.part-1>.part-2,
+.Protfolio-3 .container .slide>.title>.hover>.part-1>.part-3,
+.Protfolio-3 .container .slide>.title>.hover>.part-1>.part-4{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.Protfolio-3 .container .slide>.title-dif{
+    overflow: hidden;
+    height: 100%;
+    width: 31%;
+    position: relative;
+    transition: background 1s;
+    background:#08d665;
+}
+.Protfolio-3 .container .slide>.title-dif>.about-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    width: 90%;
+    height: 80%;
+    /* background: cornsilk; */
+    text-align: center;
+}
+.Protfolio-3 .container .slide>.title-dif>.about-title h2{
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 30px 0;
+    transition: color .5s;
+}
+.Protfolio-3 .container .slide>.title-dif>.about-title span{
+    text-transform:capitalize;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color .5s;
+}
+.Protfolio-3 .container .slide>.title-dif>.about-title .line{
+    width: 80%;
+    height: .5px;
+    background: #c8c6c6;
+    margin: 30px;
+}
+.Protfolio-3 .container .slide>.title-dif>.about-title .wordse,
+.Protfolio-3 .container .slide>.title>.about-title .wordse{
+    width: 100%;
+    height: 100px;
+    /* background: seagreen; */
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.Protfolio-3 .container .slide>.title-dif>.about-title .wordse span,
+.Protfolio-3 .container .slide>.title>.about-title .wordse span{
+    display: block;
+    font-size: 1rem;
+    color: #999;
+    transition: color .5s;
+}
+.Protfolio-3 .container .slide>.title>.about-title .wordse>.num{
+    color: #22cd6f;
+    transition: color .5s;
+}
+.Protfolio-3 .container .slide>.title:hover .about-title .wordse>.num,
+.Protfolio-3 .container .slide>.title:hover .about-title .wordse>span,
+.Protfolio-3 .container .slide>.title-dif>.about-title .wordse span,
+.Protfolio-3 .container .slide>.title-dif>.about-title .wordse>.num{
+    color: #fff;
+}
+.Protfolio-3 .container .slide>.title-dif>.about-title .wordse>.num,
+.Protfolio-3 .container .slide>.title>.about-title .wordse>.num{
+    font-size: 2.5rem;
+}
+.Protfolio-3 .container .slide>.title-dif>.about-title a,
+.Protfolio-3 .container .slide>.title>.about-title a{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 20px 55px;
+    border-radius: 4px;
+    background: #06a950;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+.Protfolio-3 .container .slide>.title-dif>.about-title a>i,
+.Protfolio-3 .container .slide>.title>.about-title a>i{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    background: #fff;
+    color: #121517;
+    border-radius: 4px;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+/* .Protfolio-3 .container .slide>.title-dif:hover{
+    visibility: visible;
+} */
+.Protfolio-3 .container .slide>.title-dif>.hover{
+    position: absolute;
+    bottom: -60%;
+    right: -10%;
+    transform: translate(-20%,-20%);
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border-radius: 50%;
+    position: relative;
+    /* z-index: 10; */
+}
+.Protfolio-3 .container .slide>.title-dif>.hover>.part-1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500;
+    height: 500;
+    border-radius: 50%;
+    background: #22cd6f;
+}
+.Protfolio-3 .container .slide>.title-dif>.hover>.part-1>.part-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400;
+    height: 400;
+    border-radius: 50%;
+    background: #39d27e;
+}
+.Protfolio-3 .container .slide>.title-dif>.hover>.part-1>.part-3{
+    position: absolute;
+    top: 300%;
+    left: 300%;
+    transform: translate(-50%,-50%);
+    width: 200;
+    height: 200;
+    border-radius: 50%;
+    background: #4dd78b;
+}
+.Protfolio-3 .container .slide>.title-dif>.hover>.part-1>.part-4{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200;
+    height: 200;
+    border-radius: 50%;
+    background: #5fdb97;
+}
+/* Protfolio-3-end */
+/* Protfolio-4 */
+.Protfolio-4{
+    width: 100%;
+    height: 800px;
+    background-image: url(../img/download-4.png);
+    background-size: cover;
+}
+.Protfolio-4 .top,
+.Protfolio-5 .top{
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.986);
+    position: relative;
+}
+.Protfolio-4 .top>.container{
+    height: 700px;
+    /* background: rosybrown; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Protfolio-4 .top>.container .slide{
+    width: 100%;
+    height: 500px;
+    /* background: saddlebrown; */
+    margin-top: 30px;
+}
+.Protfolio-4 .top>.container .slide>.about-slide{
+    width: 30%;
+    height: 95%;
+    background: seagreen ;
+}
+.Protfolio-4 .top>.container .slide>.about-slide img{
+    width: 100%;
+    height: 55%;
+}
+.Protfolio-4 .top>.container .slide>.about-slide>.title{
+    width: 100%;
+    height: 45%;
+    background: #fff;
+    padding: 15px 20px;
+}
+.Protfolio-4 .top>.container .slide>.about-slide>.title a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    transition: color .5s;
+    font-weight: 600;
+}
+.Protfolio-4 .top>.container .slide>.about-slide:hover .title a{
+    color: #06a950;
+}
+.Protfolio-4 .top>.container .slide>.about-slide>.title .hover{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    position: relative;
+}
+.Protfolio-4 .top>.container .slide>.about-slide>.title .hover>.icon{
+    position: absolute;
+    width: 10%;
+    height: 100%;
+    color: #06a950;
+}
+.Protfolio-4 .top>.container .slide>.about-slide>.title .hover .title{
+    position: absolute;
+    top: 4.5px;
+    left: 10%;
+    transition: left 1s;
+    color: #06a950;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+.Protfolio-4 .top>.container .slide>.about-slide>.title .hover .title:hover{
+    left: 15%;
+}
+/* Protfolio-4-end */
+/* Protfolio-5 */
+.Protfolio-5{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/download-4.png);
+    /* background-size: cover; */
+}
+.Protfolio-5 .container{
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background: wheat; */
+}
+.Protfolio-5 .container .title{
+    /* background: yellow; */
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    text-align: center;
+}
+.Protfolio-5 .container .title>span{
+    /* margin: auto; */
+    text-transform: uppercase;
+    color: #22cd6f;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.Protfolio-5 .container .title>h2{
+    margin: auto;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 300;
+    width: 55%;
+}
+.Protfolio-5 .container .title>h2>span{
+    color: #22cd6f;
+}
+.Protfolio-5 .container .title>.group{
+    width: 50%;
+    height: 150px;
+    margin: auto;
+    /* background: saddlebrown; */
+}
+.Protfolio-5 .container .title>.group input{
+    background: #32383a;
+    width: 50%!important;
+    padding: 14px 15px;
+    border: 1px solid #22cd6f;
+    border-radius: 5px;
+    float: left;
+    color: #fff;
+}
+.Protfolio-5 .container .title>.group a{
+    text-decoration: none;
+    padding: 15px 60px 15px 30px;
+    background: #22cd6f;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    border: 1px solid transparent;
+    font-size: 15px;
+    margin-left: -40px;
+    transition: background .5s;
+}
+.Protfolio-5 .container .title>.group a i{
+    background: #fff;
+    color: #22cd6f;
+    height: 35px;
+    width: 35px;
+    text-align: center!important;
+    position: absolute;
+    right: 13px;
+    line-height: 35px;
+    border-radius: 3px;
+    top: 50%;
+    margin-top: -17.5px;
+    transition: background .5s;
+}
+.Protfolio-5 .container .title>.group a:hover,
+.Protfolio-5 .container .title>.group>a:hover i{
+    background: transparent !important;
+    color: #22cd6f;
+}
+.Protfolio-5 .container .title>.icon{
+    width: 100%;
+    height: 100px;
+    /* background: magenta; */
+    margin-top:70px;
+}
+.Protfolio-5 .container .title>.icon img{
+    /* color: #999; */
+    cursor: grabbing;
+    opacity: .2;
+    transition: opacity .5s;
+}
+.Protfolio-5 .container .title>.icon img:hover{
+    /* color: #22cd6f; */
+    opacity: 1;
+}
+/* Protfolio-5-end */
+/* Protfolio-end */
+/* end */
+.end{
+    width: 100%;
+    height: 200px;
+    background: #050505;
+    position: relative;
+}
+.end .title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40%;
+    height: 100px;
+    /* background: honeydew; */
+}
+.end .title a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: color .5s;
+    font-size: .9rem;
+}
+.end .title a:hover{
+    color: #06a950;
+}
+.end h2{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #999;
+    font-size: .7rem;
+    text-transform: uppercase;
+}
+.end h2>.dif{
+    color: #06a950;
+}
+/* end-finish */

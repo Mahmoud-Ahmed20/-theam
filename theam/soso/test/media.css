@@ -1,0 +1,17 @@
+@media (max-width:757px){
+    .dropdown-menu .dropdown{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 900px;
+        height: auto;
+        background: #fff;
+    }
+    .dropdown-menu .dropdown .div {
+        width: 200px;
+        height: 100%;
+    }
+    .dropdown-menu .dropdown .div a{
+        display: block;
+    }
+}

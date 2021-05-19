@@ -1,0 +1,193 @@
+@media (max-width:757px){
+    .navbar-1{
+        visibility: hidden;
+    }
+}
+@media (max-width:757px){
+    .navbar-2{
+        margin-top: 0;
+        visibility: hidden;
+    }
+}
+@media (max-width:757px){
+    .navbar{
+        margin-top: 0;
+        visibility:visible;
+        background: black;
+    }
+}
+@media (max-width:757px){
+    .slide-1{
+       margin: auto;
+       height: 1000px;
+    }
+    .slide-1>.top>.title{
+        width: 60%;
+        height: 400px;
+        color: white;
+        padding: 25% 0 0 30px;
+        /* margin-top: 70px; */
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .slide-1>.top>.right,.slide-1>.top>.left{
+        padding: 10px;
+    }
+    .slide-1>.top>.title>span{
+        font-size: 1.3rem;
+        text-transform: capitalize;
+    }
+    .slide-1>.top>.title>h2{
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    .slide-1>.top>.title-2{
+        width: 85%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .slide-1>.top>.title-2>div{
+        margin: 5px 0;
+        width: 95%;
+        height: 55%;
+        padding-bottom: 30px;
+        background: black;
+    }
+}
+@media (max-width:757px){
+    .slide-2{
+        /* text-align: center; */
+        height: 1900px;
+    }
+    .slide-2>.title{
+        height: 1800px;
+    }
+    .slide-2>.title>.left{
+        text-align: left;
+        width: 100%;
+        margin-left: 8px;
+    }
+    .slide-2>.title>.right{
+        float: left;
+        margin-left: 8px;
+        margin-bottom: 10px;
+    }
+    .slide-2>.title>.pages{
+        height: 1500px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .slide-2>.title>.pages>div{
+        width: 60%;
+        height: 380px;
+        margin: 10px 0;
+    }
+}
+@media (max-width:757px){
+    .slide-3{
+        height: 800px;
+    }
+    .slide-3>.top>.title{
+        height: 700px;
+        text-align: center;
+    }
+    .slide-3>.top>.title>.left>p{
+        font-size: .8rem;
+    }
+    .slide-3>.top>.title>.left>h2{
+        width: 90%;
+        margin: auto;
+        margin-top: -15px;
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .slide-3>.top>.title{
+        display: flex;
+        flex-direction: column;
+    }
+    .slide-3>.top>.title>.left>.number{
+        margin: auto;
+        width: 30%;
+    }
+    .slide-3>.top>.title>.left>.number>div{
+        text-align: center;
+        margin: 0 5px;
+        padding: 10px 15px;
+        border: 1px solid whitesmoke;
+        border-radius: 50%;
+        background: transparent;
+    }
+    .slide-3>.top>.title>.right{
+        width: 90%;
+        height: 700px;
+    }
+}
+@media (max-width:757px){
+    .slide-4{
+        height: 600px;
+    }
+    .slide-4>.title{
+        height: 530px;
+    }
+    .slide-4>.title>.pages{
+        padding-top: 60px;
+        height: 430px;
+        width: 100%;
+    }
+    .slide-4>.title>.pages>div>.left>h2{
+        font-size: 3rem;
+    }
+    .slide-4>.title>.pages>div>.center>a>h2{
+        font-size: 1.3rem;
+    }
+    .slide-4>.title>.pages>div>.center>i{
+        font-size: .7rem;
+    }
+    .slide-4>.title>.pages>div>.center>p{
+        font-size:.7rem;
+    }
+    .slide-4>.title>.pages>div>.right{
+        width: 35%;
+        height: 130px;
+    }
+}
+@media (max-width:757px){
+    .slide-8{
+        height: 1200px;
+        width: 100%;
+    }
+    .slide-8>.pages{
+        width: 80%;
+        height: 1100px;
+        padding-left: 20px;
+    }
+    .slide-8>.pages,.slide-8>.pages>.pages-2{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: flex-end; */
+        align-items: stretch;
+        text-align: left;
+    }
+    .slide-8>.pages>div>.icon{
+        width: 300px;
+        margin-left: 10px;
+    }
+    .slide-8>.pages>.pages-2{
+        width: 80%;
+        margin-left: 15px;
+        display: flex;
+        /* justify-content: flex-end; */
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .slide-8>.pages>div>.connect{
+        margin-left: 90px;
+    }
+    .slide-8>.pages>div>.connect>a>i{
+        /* margin: auto; */
+        margin: 0 10px;
+        text-align: center;
+    }
+}
